@@ -4,14 +4,24 @@ using UnityEngine;
 
 public class test : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-        int score = 150;
-        Debug.Log(score);
+    // Use this for initialization
+    void Start(){
+
+        for (int array = 0; array < 5; array++)
+        {
+            Debug.Log(array);
+        }
+
+        for (int array = 0; array >= 5; array--)
+        {
+            Debug.Log(array);
+        }
+
     }
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
+
+    // Update is called once per frame
+    void Update() {
+
+    }
 }
