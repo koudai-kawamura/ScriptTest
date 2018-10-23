@@ -2,26 +2,35 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class test : MonoBehaviour {
+public class test : MonoBehaviour
+{
 
     // Use this for initialization
-    void Start(){
+    void Start()
+    {
+        int[] array = new int[5];
 
-        for (int array = 0; array < 5; array++)
+        array[0] = 10;
+        array[1] = 20;
+        array[2] = 30;
+        array[3] = 40;
+        array[4] = 50;
+
+        for (int i = 0; i < 5; i++)
         {
-            Debug.Log(array);
+            Debug.Log(array[i]);
         }
 
-        for (int array = 0; array >= 5; array--)
+        for (int i =4; i >= 0; i--)
         {
-            Debug.Log(array);
+            Debug.Log(array[i]);
         }
-
     }
 
 
     // Update is called once per frame
-    void Update() {
+    void Update()
+    {
 
     }
 }
